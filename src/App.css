@@ -1,0 +1,128 @@
+:root{
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --StarBackground: hsl(220, 13%, 23%);
+  --StarColor: hsl(25,97%,53%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--VeryDarkBlue);
+  font-family: "Overpass", sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+img{
+  height: 20px;
+  width: 20px;
+}
+
+.container{
+  background-color: var(--DarkBlue);
+  width: 350px;
+  padding: 30px;
+  margin-bottom: 15px;
+}
+
+.starContainer {
+  width: 40px;
+  height: 40px;
+  background-color: var(--StarBackground);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+h1{
+  color: var(--White);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+p{
+  color: var(--LightGrey);
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonContainer > button{
+  width: 40px;
+  height: 40px;
+  background-color: var(--StarBackground);
+  color: var(--LightGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-radius: 50%;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.buttonContainer > button:hover{
+  background-color: white;
+  color: var(--StarBackground);
+  transition: all 0.3s ease;
+}
+
+.buttonContainer > button:focus{
+  background-color: var(--StarColor);
+  color: black;
+  font-weight: bold;
+}
+
+.submit{
+  width: 100%;
+  border-radius: 20px;
+  padding: 8px;
+  border: none;
+  background-color: var(--StarColor);
+  color: var(--VeryDarkBlue);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.submit:hover{
+  background-color: white;
+  color: var(--StarBackground);
+  transition: all 0.3s ease;
+}
+
+.thankYou{
+  text-align: center;
+}
+
+.thankYou img{
+  margin-bottom: 15px;
+}
+
+.selectedRate{
+  background-color: var(--StarBackground);
+  color: var(--StarColor);
+  padding: 0.6rem 2rem;
+  display: block;
+  border-radius: 1rem;
+  margin-bottom: 15px;
+}
